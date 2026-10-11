@@ -166,7 +166,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/module1/Assesement_1/Employee.java</url>
-          <line>22</line>
+          <line>20</line>
           <properties class="Assesement_1.Employee" method="getEmp_id">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -175,7 +175,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/module1/Assesement_1/Employee.java</url>
-          <line>30</line>
+          <line>26</line>
           <properties class="Assesement_1.Employee" method="getName">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -184,7 +184,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/module1/Assesement_1/Employee.java</url>
-          <line>62</line>
+          <line>50</line>
           <properties class="Assesement_1.Employee" method="getSpall">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

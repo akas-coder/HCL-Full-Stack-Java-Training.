@@ -23,6 +23,7 @@ public class Main {
 
         for(Employee e:emp){
             System.out.println(e.toString());
+            System.out.println();
         }
 
 

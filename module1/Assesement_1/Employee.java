@@ -16,58 +16,44 @@ abstract class Employee implements Comparable<Employee> {
         this.spall = spall;
         this.ta = ta;
     }
-
     Employee() {
     }
-
     public int getEmp_id() {
         return emp_id;
     }
-
     public void setEmp_id(int emp_id) {
         this.emp_id = emp_id;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public double getBasic() {
         return basic;
     }
-
     public void setBasic(double basic) {
         this.basic = basic;
     }
-
     public double getHra() {
         return hra;
     }
-
     public void setHra(double hra) {
         this.hra = hra;
     }
-
     public double getTa() {
         return ta;
     }
-
     public void setTa(double ta) {
         this.ta = ta;
     }
-
     public double getSpall() {
         return spall;
     }
-
     public void setSpall(double spall) {
         this.spall = spall;
     }
-
     abstract int getRate();
 
     public double calculateBonus(double basic,double hra,int bonusRate){
@@ -75,6 +61,10 @@ abstract class Employee implements Comparable<Employee> {
     }
     public String toString(){
         return "Employee id: "+emp_id+"\n"+ "Name: "+name +"\n"+"Bonus: "+calculateBonus(this.basic, this.hra,this.getRate());
+    }
+    @Override
+    public int compareTo(Employee o) {
+        return (int) (this.calculateBonus(this.basic,this.hra,this.getRate())-o.calculateBonus(o.basic,o.hra,o.getRate()));
     }
 }
 class Manager extends Employee{
@@ -87,11 +77,6 @@ class Manager extends Employee{
     public int getRate(){
         return 12;
     }
-
-    @Override
-    public int compareTo(Employee o) {
-        return (int) (this.calculateBonus(this.basic,this.hra,this.getRate())-o.calculateBonus(o.basic,o.hra,o.getRate()));
-    }
 }
 class Engineer extends Employee{
 
@@ -102,10 +87,6 @@ class Engineer extends Employee{
     @Override
     public int getRate(){
         return 12;
-    }
-    @Override
-    public int compareTo(Employee o) {
-        return (int) (this.calculateBonus(this.basic,this.hra,this.getRate())-o.calculateBonus(o.basic,o.hra,o.getRate()));
     }
 }
 class Admin extends Employee{
@@ -118,11 +99,6 @@ class Admin extends Employee{
     public int getRate(){
         return 10;
     }
-
-    @Override
-    public int compareTo(Employee o) {
-        return (int) (this.calculateBonus(this.basic,this.hra,this.getRate())-o.calculateBonus(o.basic,o.hra,o.getRate()));
-    }
 }
 class Accountant extends Employee{
 
@@ -133,11 +109,6 @@ class Accountant extends Employee{
     @Override
     public int getRate(){
         return 12;
-    }
-
-    @Override
-    public int compareTo(Employee o) {
-        return (int) (this.calculateBonus(this.basic,this.hra,this.getRate())-o.calculateBonus(o.basic,o.hra,o.getRate()));
     }
 }
 
