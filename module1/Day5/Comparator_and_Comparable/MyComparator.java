@@ -1,4 +1,4 @@
-package Day5.Class;
+package Day5.Comparator_and_Comparable;
 
 import java.util.Comparator;
 
@@ -7,3 +7,4 @@ public class MyComparator implements Comparator<Student> {
         return Integer.compare(s1.rno,s2.rno);
     }
 }
+

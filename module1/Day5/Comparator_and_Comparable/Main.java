@@ -1,4 +1,4 @@
-package Day5.Class;
+package Day5.Comparator_and_Comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;

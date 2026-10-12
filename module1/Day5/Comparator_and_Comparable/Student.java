@@ -1,4 +1,4 @@
-package Day5.Class;
+package Day5.Comparator_and_Comparable;
 
 public class Student {
     String name;
@@ -34,4 +34,5 @@ public class Student {
     public void setMarks(int marks) {
         this.marks = marks;
     }
+
 }
