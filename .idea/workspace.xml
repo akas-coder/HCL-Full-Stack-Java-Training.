@@ -40,6 +40,8 @@
     "Application.CollectionsExample.executor": "Run",
     "Application.ConstructorOverloading.executor": "Run",
     "Application.CustomSortingByAge.executor": "Run",
+    "Application.Day5.Class.Main.executor": "Run",
+    "Application.Day5.Task.Main.executor": "Run",
     "Application.DemoConstructor.executor": "Run",
     "Application.Hello.executor": "Run",
     "Application.ImplementPriorityQueue.executor": "Run",
@@ -64,7 +66,7 @@
       <recent name="cont" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Day5.Class.Main">
     <configuration name="AbstractionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day3.AbstractionExample" />
       <module name="HCL" />
@@ -104,6 +106,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day5.Class.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day5.Class.Main" />
+      <module name="HCL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day5.Class.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Assesement_1.Main" />
       <module name="HCL" />
@@ -119,6 +134,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day5.Class.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.AbstractionExample" />
         <item itemvalue="Application.Child2" />
@@ -199,6 +215,33 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/module1/Day5/Task/Employee.java</url>
+          <line>18</line>
+          <properties class="Day5.Task.Employee" method="getName">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/module1/Day5/Task/Employee.java</url>
+          <line>24</line>
+          <properties class="Day5.Task.Employee" method="getSalary">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/module1/Day5/Task/Employee.java</url>
+          <line>27</line>
+          <properties class="Day5.Task.Employee" method="setSalary">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
