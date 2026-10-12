@@ -30,38 +30,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ABC.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AbstractionExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Akash.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ce.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Child.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Child2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CollectionsExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConstructorOverloading.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CustomSortingByAge.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day5.Class.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day5.Comparator_and_Comparable.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day5.Task.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DemoConstructor.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Hello.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ImplementPriorityQueue.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ImplementQueue.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MapImplementation.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PublicConstructor.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SortUsingComparable.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StackExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SuperCalling.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ABC.executor": "Run",
+    "Application.AbstractionExample.executor": "Run",
+    "Application.Akash.executor": "Run",
+    "Application.Ce.executor": "Run",
+    "Application.Child.executor": "Run",
+    "Application.Child2.executor": "Run",
+    "Application.CollectionsExample.executor": "Run",
+    "Application.ConstructorOverloading.executor": "Run",
+    "Application.CustomSortingByAge.executor": "Run",
+    "Application.Day5.Class.Main.executor": "Run",
+    "Application.Day5.Comparator_and_Comparable.Main.executor": "Run",
+    "Application.Day5.FunctionalInterface.Main.executor": "Run",
+    "Application.Day5.Lambdas.Main.executor": "Run",
+    "Application.Day5.Task.Main.executor": "Run",
+    "Application.DemoConstructor.executor": "Run",
+    "Application.EvenandOdd.executor": "Run",
+    "Application.Hello.executor": "Run",
+    "Application.ImplementPriorityQueue.executor": "Run",
+    "Application.ImplementQueue.executor": "Run",
+    "Application.ListExample.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MapImplementation.executor": "Run",
+    "Application.PublicConstructor.executor": "Run",
+    "Application.SortUsingComparable.executor": "Run",
+    "Application.StackExample.executor": "Run",
+    "Application.SuperCalling.executor": "Run",
+    "Application.calculator.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "editor.preferences.completion"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Day1" />
@@ -181,6 +185,11 @@
           <url>file://$PROJECT_DIR$/module1/Assesement_1/Employee.java</url>
           <line>11</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/module1/Day5/Lambdas/MyFunctionalInterface.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/module1/Assesement_1/Employee.java</url>

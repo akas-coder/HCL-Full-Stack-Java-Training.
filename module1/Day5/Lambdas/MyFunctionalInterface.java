@@ -2,14 +2,18 @@ package Day5.Lambdas;
 
 @FunctionalInterface
 public interface MyFunctionalInterface {
-    void show();
+    void calculate(int x, int y);
 }
 class  Main{
     public static void main(String[] args) {
-        MyFunctionalInterface i=()->{
-            System.out.println("This is my functional interface");
+        MyFunctionalInterface i=( x,  y)->{
+            System.out.println("Square of x : "+x*x);
+            System.out.println("Addition  : "+ x + y);
+            System.out.println("Division: "+x/y);
+            System.out.println("Multiplication : "+y*x);
         };
-        i.show();
+        i.calculate(2,3);
+
     }
 }
 
