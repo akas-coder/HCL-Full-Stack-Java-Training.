@@ -1,9 +1,9 @@
 package Day5.Task;
 
 abstract class Employee implements Comparable<Employee>{
-    private int id;
-    private String name;
-    private double salary;
+   private int id;
+   private   String name;
+     private double salary;
     public Employee(int id, String name, double salary) {
         this.id = id;
         this.name = name;
@@ -30,9 +30,11 @@ abstract class Employee implements Comparable<Employee>{
     Employee(){}
     @Override
     public int  compareTo(Employee ob){
-        return (int) (this.getSalary()-ob.getSalary());
+        return Double.compare(this.getSalary(),ob.getSalary());
     }
 
     abstract String display();
+
+    //public abstract String display();
 }
 
