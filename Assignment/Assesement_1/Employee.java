@@ -1,4 +1,4 @@
-package Assesement_1;
+package Assignment.Assesement_1;
 
 abstract class Employee implements Comparable<Employee> {
     int emp_id;

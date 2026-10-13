@@ -1,4 +1,4 @@
-package Assesement_1;
+package Assignment.Assesement_1;
 
 import java.util.ArrayList;
 import java.util.Collections;
