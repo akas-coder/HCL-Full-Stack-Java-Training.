@@ -64,6 +64,7 @@
     "Application.Child2.executor": "Run",
     "Application.CollectionsExample.executor": "Run",
     "Application.ConstructorOverloading.executor": "Run",
+    "Application.CustomException.executor": "Run",
     "Application.CustomSortingByAge.executor": "Run",
     "Application.Day5.Class.Main.executor": "Run",
     "Application.Day5.Comparator_and_Comparable.Main.executor": "Run",
@@ -76,15 +77,18 @@
     "Application.Hello.executor": "Run",
     "Application.ImplementPriorityQueue.executor": "Run",
     "Application.ImplementQueue.executor": "Run",
+    "Application.InvalidAgeException.executor": "Run",
     "Application.ListExample.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Mains.executor": "Run",
     "Application.MapImplementation.executor": "Run",
+    "Application.MultipleCatch.executor": "Run",
     "Application.PredicateExample.executor": "Run",
     "Application.PublicConstructor.executor": "Run",
     "Application.SortUsingComparable.executor": "Run",
     "Application.StackExample.executor": "Run",
     "Application.SuperCalling.executor": "Run",
+    "Application.ThrowUse.executor": "Run",
     "Application.ThrowsExample.executor": "Run",
     "Application.calculator.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -100,7 +104,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Day6.Exception_Handling" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akash\OneDrive\Desktop\HCL\Assignment\Assesement_1" />
       <recent name="C:\Users\akash\OneDrive\Desktop\HCL\Certifications" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
