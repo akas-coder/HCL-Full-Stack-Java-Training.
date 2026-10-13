@@ -3,12 +3,20 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="898357b2-1f4b-4a76-b21d-2f4d385149dd" name="Changes" comment="fghj" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/akash/OneDrive/Desktop/HCL" value="3KcoGUuBqyHMaIyL9ZkcICU9ycl" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,52 +34,71 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="3KM6c07RVbNoegMoSC3L5hZXMGD" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ABC.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AbstractionExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Akash.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ce.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Child.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Child2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CollectionsExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConstructorOverloading.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CustomSortingByAge.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day5.Class.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day5.Comparator_and_Comparable.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day5.FunctionalInterface.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day5.Lambdas.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Day5.Task.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DemoConstructor.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EvenandOdd.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Hello.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ImplementPriorityQueue.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ImplementQueue.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Mains.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MapImplementation.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PredicateExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PublicConstructor.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SortUsingComparable.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StackExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SuperCalling.executor&quot;: &quot;Run&quot;,
-    &quot;Application.calculator.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ABC.executor": "Run",
+    "Application.AbstractionExample.executor": "Run",
+    "Application.Akash.executor": "Run",
+    "Application.ArithematicException.executor": "Run",
+    "Application.Ce.executor": "Run",
+    "Application.Child.executor": "Run",
+    "Application.Child2.executor": "Run",
+    "Application.CollectionsExample.executor": "Run",
+    "Application.ConstructorOverloading.executor": "Run",
+    "Application.CustomSortingByAge.executor": "Run",
+    "Application.Day5.Class.Main.executor": "Run",
+    "Application.Day5.Comparator_and_Comparable.Main.executor": "Run",
+    "Application.Day5.FunctionalInterface.Main.executor": "Run",
+    "Application.Day5.Lambdas.Main.executor": "Run",
+    "Application.Day5.Task.Main.executor": "Run",
+    "Application.DemoConstructor.executor": "Run",
+    "Application.EvenandOdd.executor": "Run",
+    "Application.GenericExample.executor": "Run",
+    "Application.Hello.executor": "Run",
+    "Application.ImplementPriorityQueue.executor": "Run",
+    "Application.ImplementQueue.executor": "Run",
+    "Application.ListExample.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Mains.executor": "Run",
+    "Application.MapImplementation.executor": "Run",
+    "Application.PredicateExample.executor": "Run",
+    "Application.PublicConstructor.executor": "Run",
+    "Application.SortUsingComparable.executor": "Run",
+    "Application.StackExample.executor": "Run",
+    "Application.SuperCalling.executor": "Run",
+    "Application.ThrowsExample.executor": "Run",
+    "Application.calculator.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.completions.CompletionsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\akash\OneDrive\Desktop\HCL\Certifications" />
@@ -81,7 +108,7 @@
       <recent name="cont" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AbstractionExample">
+  <component name="RunManager">
     <configuration name="AbstractionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day3.AbstractionExample" />
       <module name="HCL" />
@@ -149,21 +176,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AbstractionExample" />
         <item itemvalue="Application.Day5.Comparator_and_Comparable.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.AbstractionExample" />
         <item itemvalue="Application.Child2" />
         <item itemvalue="Application.Child" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -214,7 +233,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/module1/Assesement_1/Employee.java</url>
           <line>20</line>
-          <properties class="Assesement_1.Employee" method="getEmp_id">
+          <properties class="Assesement_1.Employee">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -232,7 +251,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/module1/Assesement_1/Employee.java</url>
           <line>50</line>
-          <properties class="Assesement_1.Employee" method="getSpall">
+          <properties class="Assesement_1.Employee">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
