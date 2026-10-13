@@ -1,7 +1,5 @@
 package Day6.CustomException;
 
-import Day6.Exception_Handling.ArithematicException;
-
 public class InvalidAgeException extends Exception {
     InvalidAgeException(String msg) {
         super(msg);
@@ -16,6 +14,7 @@ public class InvalidAgeException extends Exception {
                 }
             } catch (InvalidAgeException e) {
                 System.out.println("Invalid Age");
+                System.out.println(e.getMessage());
                // System.out.println(e.fillInStackTrace());
             }
         }
