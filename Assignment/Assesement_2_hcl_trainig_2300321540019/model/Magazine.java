@@ -1,4 +1,4 @@
-package Assignment.Assesement_2.model;
+package Assignment.Assesement_2_hcl_trainig_2300321540019.model;
 
 public class Magazine {
     int issueNumber;
