@@ -13,5 +13,6 @@ public class Main {
 		School stXaviers = app.getBean(School.class);
 		stXaviers.setS1("Akash rauniyar");
 		stXaviers.getName();
+		System.out.println("end of main");
 	}
 }
