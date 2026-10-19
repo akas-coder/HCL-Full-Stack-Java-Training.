@@ -257,7 +257,7 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/SpringCore/src/main/java/org/example/Main.java</url>
+          <url>file://$PROJECT_DIR$/SpringCoreFundamental/src/main/java/org/example/Main.java</url>
           <line>12</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
