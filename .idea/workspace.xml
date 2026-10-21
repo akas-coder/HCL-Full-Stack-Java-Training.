@@ -98,6 +98,9 @@
     "Application.ThrowUse.executor": "Run",
     "Application.ThrowsExample.executor": "Run",
     "Application.calculator.executor": "Run",
+    "Application.org.example.Day2.fielddi.Main.executor": "Run",
+    "Application.org.example.Day2.notificationService.Main.executor": "Run",
+    "Application.org.example.Day2.setterdi.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "false",
@@ -108,7 +111,8 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/akash/OneDrive/Desktop/HCL/SpringCore/src/main/java/org/example/Main.java",
@@ -123,18 +127,18 @@
       <recent name="Day6.Exception_Handling" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akash\OneDrive\Desktop\HCL\Module2" />
       <recent name="C:\Users\akash\OneDrive\Desktop\HCL\Certifications" />
       <recent name="C:\Users\akash\OneDrive\Desktop\" />
       <recent name="C:\Users\akash\OneDrive\Desktop\HCL\module1" />
       <recent name="C:\Users\akash\OneDrive\Desktop\HCL\Best" />
-      <recent name="C:\Users\akash\OneDrive\Desktop\HCL" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Day1" />
       <recent name="cont" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AbstractionExample">
+  <component name="RunManager">
     <configuration name="AbstractionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day3.AbstractionExample" />
       <module name="HCL" />
@@ -257,7 +261,7 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/SpringCoreFundamental/src/main/java/org/example/Main.java</url>
+          <url>file://$PROJECT_DIR$/Module2/src/main/java/org/example/Main.java</url>
           <line>12</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
