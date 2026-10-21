@@ -2,9 +2,7 @@ package org.example;
 
 
 import org.example.School.School;
-import org.example.StudentPackage.Student;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -14,5 +12,7 @@ public class Main {
 		stXaviers.setS1("Akash rauniyar");
 		stXaviers.getName();
 		System.out.println("end of main");
+
+
 	}
 }
