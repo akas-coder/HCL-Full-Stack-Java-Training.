@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Day1;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

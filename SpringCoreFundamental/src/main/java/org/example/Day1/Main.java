@@ -1,7 +1,7 @@
-package org.example;
+package org.example.Day1;
 
 
-import org.example.School.School;
+import org.example.Day1.School.School;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

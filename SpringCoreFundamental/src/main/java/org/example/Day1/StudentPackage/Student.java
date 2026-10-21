@@ -1,4 +1,4 @@
-package org.example.StudentPackage;
+package org.example.Day1.StudentPackage;
 
 import lombok.Data;
 import org.springframework.stereotype.Component;

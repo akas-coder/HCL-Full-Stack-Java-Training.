@@ -1,4 +1,4 @@
-package org.example.setterdi;
+package org.example.Day2.setterdi;
 
 public class Address {
     public void getAddress(){

@@ -1,4 +1,4 @@
-package org.example.setterdi;
+package org.example.Day2.setterdi;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
