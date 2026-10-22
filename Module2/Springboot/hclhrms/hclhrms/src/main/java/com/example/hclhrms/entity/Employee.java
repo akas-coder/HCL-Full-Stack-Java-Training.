@@ -48,5 +48,14 @@ public class Employee {
         this.progStack = progStack;
         this.email = email;
     }
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "emp_id='" + emp_id + '\'' +
+                ", emp_name='" + emp_name + '\'' +
+                ", designation='" + designation + '\'' +
+                ", progStack='" + progStack + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

@@ -7,31 +7,51 @@ import java.util.List;
 
 @Component
 public class EmployeeImpl implements EmployeeRepo{
-   List<Employee>empList=new ArrayList<>();
+   ArrayList<Employee>empList=new ArrayList<>();
 
     @Override
     public String addEmp(Employee emp) {
         empList.add(emp);
-        return "Employee Added Successfully!";
+        return "Hey "+emp.getEmp_name()+" Employee Added Successfully!" +" with "+emp.toString();
     }
 
     @Override
-    public Employee getEmp() {
-        return null;
+    public ArrayList<Employee> getEmp() {
+        return new ArrayList<>(empList);
     }
 
     @Override
     public Employee getEmpById(long empid) {
-        return null;
+//        for(int i=0;i<empList.size();i++){
+//            if(empList.get(i).getEmp_id()==empid){
+//                return empList.get(i);
+//            }
+//        }
+       return empList.stream().filter(e->e.getEmp_id()==empid).findFirst().orElse(null);
     }
 
     @Override
-    public String deleteById(long empid) {
-        return "";
+    public String deleteById(long id) {
+        String msg="";
+        for(int i=0;i<empList.size();i++){
+            if(empList.get(i).getEmp_id()==id){
+                 msg+=empList.get(i).toString();
+               empList.remove(i);
+            }
+        }
+        return "This Employee is delted : "+ msg;
     }
 
     @Override
     public String updateById(long empid, Employee updatedEmp) {
         return "";
     }
+
+    @Override
+    public ArrayList<Employee> addInBulk(ArrayList<Employee>ls) {
+       if(empList.addAll(ls))
+           return new ArrayList<>(empList);
+       return empList;
+    }
+
 }
