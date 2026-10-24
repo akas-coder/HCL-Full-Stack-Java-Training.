@@ -51,7 +51,13 @@ public class EmployeeImpl implements EmployeeRepo{
 
     @Override
     public String updateById(long empid, Employee updatedEmp) {
-        return "";
+         Employee existingEmp=getEmpById(empid);
+         if(existingEmp!=null){
+             existingEmp.setEmp_name(updatedEmp.getEmp_name());
+             existingEmp.setEmail(updatedEmp.getEmail());
+             existingEmp.setDesignation("HeHe");
+         }
+        return "Employee updated with : "+updatedEmp.getEmp_name()+" "+ updatedEmp.getEmail()+" "+ updatedEmp.getDesignation();
     }
 
     @Override
@@ -60,5 +66,7 @@ public class EmployeeImpl implements EmployeeRepo{
            return new ArrayList<>(empList);
        return empList;
     }
+
+
 
 }

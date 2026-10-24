@@ -3,7 +3,9 @@ package com.example.hclhrms.controller;
 import com.example.hclhrms.entity.Employee;
 import com.example.hclhrms.service.EmployeeServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -32,13 +34,18 @@ public class EmployeeController {
         return employeeService.getEmployeeById(1);
     }
 
-    @GetMapping("/deleteById")
+    @DeleteMapping("/deleteById")
     public String deleteById(){
-       return employeeService.deleteById(1);
+       return employeeService.deleteById();
     }
 
     @GetMapping("/addInBulk")
     public ArrayList<Employee> addInBulk(){
        return employeeService.addInBulk();
+    }
+
+    @PutMapping("/updateById")
+    public String updateById(){
+        return employeeService.updateById();
     }
 }

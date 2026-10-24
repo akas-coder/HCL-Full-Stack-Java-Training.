@@ -22,8 +22,9 @@ public class EmployeeServiceImpl {
     public Employee getEmployeeById(long id){
         return impl.getEmpById(id);
     }
-    public String deleteById(long id){
-        return impl.deleteById(id);
+    public String deleteById(){
+        long id =1;
+        return impl.deleteById(1);
     }
     public ArrayList<Employee> addInBulk(){
         ArrayList<Employee>emp=new ArrayList<>();
@@ -33,4 +34,8 @@ public class EmployeeServiceImpl {
         emp.add(new Employee(5,"dkas","Ai","Python","d"));
        return impl.addInBulk(emp);
     }
+   public String updateById(){
+        Employee emp=new Employee(5,"ShahRukh","Actor","HTMl","shahrukh@gmail.com");
+        return impl.updateById(2,emp);
+   }
 }
