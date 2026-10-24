@@ -32,14 +32,21 @@ public class EmployeeImpl implements EmployeeRepo{
 
     @Override
     public String deleteById(long id) {
-        String msg="";
-        for(int i=0;i<empList.size();i++){
-            if(empList.get(i).getEmp_id()==id){
-                 msg+=empList.get(i).toString();
-               empList.remove(i);
-            }
+//        String msg="";
+//        for(int i=0;i<empList.size();i++){
+//            if(empList.get(i).getEmp_id()==id){
+//                 msg+=empList.get(i).toString();
+//               empList.remove(i);
+//            }
+//        }
+//        return "This Employee is deleted : "+ msg;
+        boolean status=false;
+        if(getEmpById(id)!=null){
+            status=empList.removeIf(e->e.getEmp_id()==id);
         }
-        return "This Employee is delted : "+ msg;
+        else
+            return "User DoesNot Exist";
+        return "User deleted with Id "+id;
     }
 
     @Override

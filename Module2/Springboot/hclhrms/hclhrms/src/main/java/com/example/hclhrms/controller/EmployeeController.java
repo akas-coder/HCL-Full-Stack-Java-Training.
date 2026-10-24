@@ -36,6 +36,7 @@ public class EmployeeController {
     public String deleteById(){
        return employeeService.deleteById(1);
     }
+
     @GetMapping("/addInBulk")
     public ArrayList<Employee> addInBulk(){
        return employeeService.addInBulk();
