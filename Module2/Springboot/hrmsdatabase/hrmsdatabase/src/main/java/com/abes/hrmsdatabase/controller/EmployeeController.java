@@ -1,0 +1,40 @@
+package com.abes.hrmsdatabase.controller;
+
+import com.abes.hrmsdatabase.model.Employee;
+import com.abes.hrmsdatabase.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+public class EmployeeController {
+    @Autowired
+    EmployeeService employeeService;
+
+    @GetMapping("/")
+    public String welcome(){
+        return "Welcome to HRMS DAtabase";
+    }
+    @GetMapping("/addNewEmployee")
+    public String addNewEmployee(){
+        return employeeService.createNewEmployee();
+    }
+
+    @GetMapping("/findById/{empid}")
+    public String getById(@PathVariable long empid){
+       return employeeService.getById(empid);
+    }
+    @GetMapping("/deleteByid/{empid}")
+    public String deleteById(long id){
+        return employeeService.deleteById(id);
+    }
+
+
+    @PutMapping("/updateEmployee/{empid}")
+    public String updateEmployee(
+            @PathVariable long empid,
+            @RequestBody Employee emp) {
+
+        return employeeService.updateEmployee(empid, emp);
+    }
+    }
+
