@@ -33,21 +33,16 @@ public class EmployeeService {
         if(employeeRepository.findById(id).isEmpty())
             return "User Does Not Exist";
         employeeRepository.deleteById(id);
-        return "User Deleted Successlly";
+        return "User Deleted Successfully";
     }
     public String updateEmployee(long id, Employee emp) {
-
         Optional<Employee> optionalEmployee = employeeRepository.findById(id);
-
-        if (optionalEmployee.isEmpty()) {
+        if (optionalEmployee.isEmpty())
             return "Employee not found with ID: " + id;
-        }
-
-        //Employee emp = optionalEmployee.get();
-
-        emp.setEmp_name(emp.getEmp_name());
-        emp.setDesignation(emp.getDesignation());
-        emp.setStack(emp.getStack());
+         Employee employee=optionalEmployee.get();
+         employee.setEmp_name(emp.getEmp_name());
+         employee.setStack(emp.getStack());
+         employee.setDesignation(emp.getDesignation());
 
         employeeRepository.save(emp);
 
