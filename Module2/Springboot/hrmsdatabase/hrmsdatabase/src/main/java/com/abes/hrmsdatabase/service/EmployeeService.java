@@ -13,14 +13,12 @@ public class EmployeeService {
     private EmployeeRepository employeeRepository;
 
 
-    public String createNewEmployee(){
-        Employee emp1=new Employee(1,"Akash","java","Full stack");
-        Employee emp2=new Employee(2,"Vikas","java","Full stack");
-        Employee emp3=new Employee(3,"manav","java","Full stack");
+    public String createNewEmployee(Employee employee){
+//        Employee emp1=new Employee(1,"Akash","java","Full stack");
+//        Employee emp2=new Employee(2,"Vikas","java","Full stack");
+//        Employee emp3=new Employee(3,"manav","java","Full stack");
 
-        employeeRepository.save(emp1);
-        employeeRepository.save(emp2);
-        employeeRepository.save(emp3);
+        employeeRepository.save(employee);
         return " saved Successfully";
     }
 

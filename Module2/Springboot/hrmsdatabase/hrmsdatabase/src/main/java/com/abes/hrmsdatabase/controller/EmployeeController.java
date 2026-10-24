@@ -14,9 +14,9 @@ public class EmployeeController {
     public String welcome(){
         return "Welcome to HRMS DAtabase";
     }
-    @GetMapping("/addNewEmployee")
-    public String addNewEmployee(){
-        return employeeService.createNewEmployee();
+    @PostMapping("/addNewEmployee")
+    public String addNewEmployee(@RequestBody Employee employee){
+        return employeeService.createNewEmployee(employee);
     }
 
     @GetMapping("/findById/{empid}")
