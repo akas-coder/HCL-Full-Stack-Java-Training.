@@ -6,13 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin("http://localhost:5173/")
 public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
 
     @GetMapping("/")
     public String welcome(){
-        return "Welcome to HRMS DAtabase";
+        return "<h1> Welcome to HRMS Database </h1>";
     }
     @PostMapping("/addNewEmployee")
     public String addNewEmployee(@RequestBody Employee employee){
