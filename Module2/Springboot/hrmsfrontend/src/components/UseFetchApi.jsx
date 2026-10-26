@@ -24,7 +24,7 @@ function UseFetchApi() {
   return (
     <div>
         {
-       JSON.stringify(serverData)
+           JSON.stringify(serverData)
         }
     </div>
   )
