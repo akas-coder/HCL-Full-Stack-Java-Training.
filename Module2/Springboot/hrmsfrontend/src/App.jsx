@@ -1,10 +1,14 @@
 
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import SampleCode from './components/SampleCode'
+
 import UseFetchApi from './components/UseFetchApi'
 import Home from './components/Home'
+import Dashboard from './components/Dashboard'
+import Login from './components/Login'
+import Registration from './components/Registration'
 import AddEmployee from './components/AddEmployee'
 
 
@@ -19,8 +23,8 @@ function App() {
 
   return (
     <>
-    <Navbar/>
-      <h2>Welcome to HRMS</h2>
+    {/* <Navbar/>
+      <h2>Welcome to HRMS</h2> */}
      {/* {
       employee.map(ele=>
         <h3>
@@ -31,10 +35,16 @@ function App() {
      } 
      <SampleCode/> 
       <UseFetchApi/> */}
-     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/addEmployee" element={<AddEmployee/>}/>
-     </Routes>
+      <BrowserRouter>
+       <Routes>
+         <Route path="/" element={<Home/>}/>
+         <Route path="/login" element={<Login/>}/>
+         <Route path="/register" element={<Registration/>}/>
+         <Route path="/login" element={<Login/>}/>
+         <Route path="/dashboard" element={<Dashboard/>}/>
+       </Routes>
+      </BrowserRouter>
+    
     </>
   );
 }

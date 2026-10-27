@@ -41,6 +41,8 @@ public class EmployeeService {
          employee.setEmp_name(emp.getEmp_name());
          employee.setStack(emp.getStack());
          employee.setDesignation(emp.getDesignation());
+         employee.setPassword(emp.getPassword());
+         employee.setEmail(emp.getEmail());
 
         employeeRepository.save(emp);
 
