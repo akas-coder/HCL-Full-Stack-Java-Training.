@@ -20,6 +20,10 @@ public class EmployeeController {
     public String addNewEmployee(@RequestBody Employee employee){
         return employeeService.createNewEmployee(employee);
     }
+    @PostMapping("/login")
+    public String login(@RequestBody Employee emp){
+        return employeeService.login(emp.getEmp_id(), emp.getEmail(), emp.getPassword());
+    }
 
     @GetMapping("/findById/{empid}")
     public String getById(@PathVariable long empid){
