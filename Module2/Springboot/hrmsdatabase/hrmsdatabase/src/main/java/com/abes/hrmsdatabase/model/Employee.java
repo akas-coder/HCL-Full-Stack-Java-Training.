@@ -9,7 +9,6 @@ public class Employee {
     @Id
     private long emp_id;
     private String emp_name;
-
     private String email;
     private String stack;
     private String designation;

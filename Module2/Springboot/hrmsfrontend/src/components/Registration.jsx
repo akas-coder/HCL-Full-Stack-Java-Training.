@@ -2,22 +2,34 @@ import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Registration() {
- const[empId, setEmpId]=useState()
-  const[empName, setEmpName]=useState('')
+ const[emp_id, setEmpId]=useState('')
+  const[emp_name, setEmpName]=useState('')
    const[email, setEmail]=useState('')
     const[designation, setDesignation]=useState('')
      const[stack, setStack]=useState('')
       const[password, setPassword]=useState('')
 
-   function sendData(){
-    alert(email+empId+empName+designation+stack+password)
-      //const response=await fetch('')
-  }
+    async function sendData(e) {
+       try{
+        e.preventDefault();
+           const server= await fetch("http://localhost:8080/v1/user/addNewEmployee",{
+            method:'Post',
+            body:JSON.stringify({emp_id: Number(emp_id),emp_name,email,designation,stack,password}),
+            headers:{"Content-Type":"application/json"}
+           });
+           const status=await server.text();
+           alert(status)
+       }
+       catch(error){
+        console.log(error);
+       }
+    }
+
   return (
     <>
       <div>Registration From</div>
 
-      <form>
+      <form onSubmit={sendData}>
         <div className="form-group">
           <label htmlFor="emp_id">Emp ID</label>
           <input type="number" onChange={(e)=>setEmpId(e.target.value)} className="form-control" id="emp_id" placeholder="Enter emp id" required />
@@ -25,7 +37,7 @@ function Registration() {
 
         <div className="form-group">
           <label htmlFor="emp_name">Name</label>
-          <input type="text" className="form-control" id="emp_name" placeholder="Enter name" required />
+          <input type="text" onChange={(e)=>setEmpName(e.target.value)} className="form-control" id="emp_name" placeholder="Enter name" required />
         </div>
 
         <div className="form-group">
@@ -48,10 +60,10 @@ function Registration() {
           <input type="password" onChange={(e)=>setPassword(e.target.value)} className="form-control" id="password" placeholder="Enter password" required />
         </div>
 
-        <button type="submit" onClick={sendData} className="btn btn-primary">Submit</button>
+        <button type="submit"  className="btn btn-primary">Submit</button>
       </form>
     </>
   )
 }
 
-export default Registration
+export default Registration 
