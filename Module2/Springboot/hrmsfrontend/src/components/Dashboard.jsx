@@ -8,26 +8,64 @@ function Dashboard() {
 
   const [attendance, setAttendance] = useState([])
 
-  useEffect(() => {
-    async function getAttendance() {
-      if (!employee) return
+  // Fetch attendance records
+  async function getAttendance() {
+    if (!employee) return
 
-      try {
-        const response = await fetch(
-          `http://localhost:8080/v1/attendance/employee/${employee.empId}`
-        )
+    try {
+      const response = await fetch(
+        `http://localhost:8080/v1/user/attendance/dashboard/${employee.empId}`
+      )
 
-        if (response.ok) {
-          const data = await response.json()
-          setAttendance(data)
-        }
-      } catch (error) {
-        console.log(error)
+      if (response.ok) {
+        const data = await response.json()
+        setAttendance(data)
       }
+    } catch (error) {
+      console.log(error)
     }
+  }
 
+  useEffect(() => {
     getAttendance()
-  }, [employee])
+  }, [])
+
+  // Check In
+  async function checkIn() {
+    try {
+      const response = await fetch(
+        'http://localhost:8080/v1/user/attendance/markAttendance',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            employee: {
+              empId: Number(employee.empId)
+            }
+          })
+        }
+      )
+
+      const message = await response.text()
+
+      if (response.ok && message === 'Attendance marked successfully') {
+        alert(message)
+        getAttendance()
+      } else {
+        alert(message || 'Check-in failed')
+      }
+    } catch (error) {
+      console.log(error)
+      alert('Unable to connect to the server')
+    }
+  }
+
+  // Check Out
+  async function checkout() {
+    alert('Checkout endpoint is not implemented in your backend yet.')
+  }
 
   if (!employee) {
     return <h3>Please log in first.</h3>
@@ -37,7 +75,24 @@ function Dashboard() {
     <div className="container mt-4">
       <h2>Employee Dashboard</h2>
 
+      <button
+        className="btn btn-success me-2"
+        onClick={checkIn}
+      >
+        Check In
+      </button>
+
+      <button
+        className="btn btn-danger"
+        onClick={checkout}
+      >
+        Check Out
+      </button>
+
+      <hr />
+
       <p>Name: {employee.emp_name}</p>
+      <p>Employee ID: {employee.empId}</p>
       <p>Email: {employee.email}</p>
 
       <hr />
@@ -70,6 +125,14 @@ function Dashboard() {
               <td>{item.comment || '-'}</td>
             </tr>
           ))}
+
+          {attendance.length === 0 && (
+            <tr>
+              <td colSpan="4" className="text-center">
+                No attendance records found
+              </td>
+            </tr>
+          )}
         </tbody>
       </table>
     </div>

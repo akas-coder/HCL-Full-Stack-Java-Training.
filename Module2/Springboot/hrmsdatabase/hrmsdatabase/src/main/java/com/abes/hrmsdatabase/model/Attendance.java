@@ -16,7 +16,7 @@ public class Attendance {
     private Long attendanceId;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "empid")
+    @JoinColumn(name = "emp_id")
     private Employee employee;
 
     @Column(nullable = false)
