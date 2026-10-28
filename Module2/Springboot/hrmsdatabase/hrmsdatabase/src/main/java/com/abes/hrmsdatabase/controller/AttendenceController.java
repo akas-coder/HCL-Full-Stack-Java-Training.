@@ -6,6 +6,8 @@ import com.abes.hrmsdatabase.service.AttendenceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @CrossOrigin(origins="http://localhost:5173/")
 @RequestMapping("/v1/user/attendance")
@@ -16,6 +18,11 @@ public class AttendenceController {
     @PostMapping("/markAttendance")
     public String markAttendence(@RequestBody Attendance attendance){
         return attendenceService.markAttendence(attendance);
+    }
+
+    @GetMapping("/dashboard/{empId}")
+    public List<Attendance> getAttendence(@PathVariable Long empId){
+        return attendenceService.getAttendance(empId);
     }
 
 }
