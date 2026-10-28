@@ -22,7 +22,7 @@ public class EmployeeController {
     }
     @PostMapping("/login")
     public String login(@RequestBody Employee emp){
-        return employeeService.login(emp.getEmp_id(), emp.getEmail(), emp.getPassword());
+        return employeeService.login(emp.getEmpId(), emp.getEmail(), emp.getPassword());
     }
 
     @GetMapping("/findById/{empid}")

@@ -27,6 +27,7 @@ public class EmployeeService {
             return "Not Found";
         return "User exist with: "+ id;
     }
+
     public String login(long emp_id, String email, String password){
         Optional<Employee> optionalEmployee = employeeRepository.findById(emp_id);
         if (optionalEmployee.isEmpty())
@@ -38,12 +39,14 @@ public class EmployeeService {
             return "Login Successful";
         return "Not Foufnd";
     }
+
     public String deleteById(long id){
         if(employeeRepository.findById(id).isEmpty())
             return "User Does Not Exist";
         employeeRepository.deleteById(id);
         return "User Deleted Successfully";
     }
+
     public String updateEmployee(long id, Employee emp) {
         Optional<Employee> optionalEmployee = employeeRepository.findById(id);
         if (optionalEmployee.isEmpty())
