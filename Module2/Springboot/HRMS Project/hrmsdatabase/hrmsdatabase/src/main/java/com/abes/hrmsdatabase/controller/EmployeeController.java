@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins="http://localhost:5173/")
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/v1/user")
 public class EmployeeController {
     @Autowired
@@ -16,27 +16,26 @@ public class EmployeeController {
     public String welcome(){
         return "<h1> Welcome to HRMS Database </h1>";
     }
+
     @PostMapping("/addNewEmployee")
     public String addNewEmployee(@RequestBody Employee employee){
         return employeeService.createNewEmployee(employee);
     }
+
     @PostMapping("/login")
     public Employee login(@RequestBody Employee emp){
-//        if (emp.getEmpId() == null) {
-//            return "Employee ID is missing";
-//        }
         return employeeService.login(emp.getEmpId(), emp.getEmail(), emp.getPassword());
     }
 
     @GetMapping("/findById/{empid}")
     public String getById(@PathVariable long empid){
-       return employeeService.getById(empid);
-    }
-    @GetMapping("/deleteByid/{empid}")
-    public String deleteById(long id){
-        return employeeService.deleteById(id);
+        return employeeService.getById(empid);
     }
 
+    @DeleteMapping("/deleteByid/{empid}")
+    public String deleteById(@PathVariable long empid){
+        return employeeService.deleteById(empid);
+    }
 
     @PutMapping("/updateEmployee/{empid}")
     public String updateEmployee(
@@ -45,5 +44,4 @@ public class EmployeeController {
 
         return employeeService.updateEmployee(empid, emp);
     }
-    }
-
+}

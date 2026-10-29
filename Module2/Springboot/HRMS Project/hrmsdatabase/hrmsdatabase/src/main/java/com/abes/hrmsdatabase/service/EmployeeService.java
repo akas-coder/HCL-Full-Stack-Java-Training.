@@ -14,10 +14,6 @@ public class EmployeeService {
 
 
     public String createNewEmployee(Employee employee){
-//        Employee emp1=new Employee(1,"Akash","java","Full stack");
-//        Employee emp2=new Employee(2,"Vikas","java","Full stack");
-//        Employee emp3=new Employee(3,"manav","java","Full stack");
-
         employeeRepository.save(employee);
         return " saved Successfully";
     }
@@ -39,16 +35,16 @@ public class EmployeeService {
         Optional<Employee> optionalEmployee = employeeRepository.findById(emp_id);
         if (optionalEmployee.isEmpty())
             throw new RuntimeException("Invalid credentials");
-        Employee emp=optionalEmployee.get();
-        String emailid=emp.getEmail();
-        String pass=emp.getPassword();
-        if(pass.equals(password) && emailid.equals(email))
+        Employee emp = optionalEmployee.get();
+        String emailid = emp.getEmail();
+        String pass = emp.getPassword();
+        if (pass.equals(password) && emailid.equals(email))
             return emp;
         throw new RuntimeException("Invalid credentials");
     }
 
     public String deleteById(Long id){
-        if(employeeRepository.findById(id).isEmpty())
+        if (employeeRepository.findById(id).isEmpty())
             return "User Does Not Exist";
         employeeRepository.deleteById(id);
         return "User Deleted Successfully";
@@ -58,14 +54,14 @@ public class EmployeeService {
         Optional<Employee> optionalEmployee = employeeRepository.findById(id);
         if (optionalEmployee.isEmpty())
             return "Employee not found with ID: " + id;
-         Employee employee=optionalEmployee.get();
-         employee.setEmp_name(emp.getEmp_name());
-         employee.setStack(emp.getStack());
-         employee.setDesignation(emp.getDesignation());
-         employee.setPassword(emp.getPassword());
-         employee.setEmail(emp.getEmail());
+        Employee employee = optionalEmployee.get();
+        employee.setEmp_name(emp.getEmp_name());
+        employee.setStack(emp.getStack());
+        employee.setDesignation(emp.getDesignation());
+        employee.setPassword(emp.getPassword());
+        employee.setEmail(emp.getEmail());
 
-        employeeRepository.save(emp);
+        employeeRepository.save(employee);  // save the existing entity with updated fields
 
         return "Employee updated successfully";
     }

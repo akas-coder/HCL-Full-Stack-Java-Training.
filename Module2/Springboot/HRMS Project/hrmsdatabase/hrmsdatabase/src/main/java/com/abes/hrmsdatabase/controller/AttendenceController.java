@@ -1,4 +1,3 @@
-
 package com.abes.hrmsdatabase.controller;
 
 import com.abes.hrmsdatabase.model.Attendance;
@@ -8,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:5173")
@@ -19,19 +19,25 @@ public class AttendenceController {
 
     // Check In
     @PostMapping("/markAttendance")
-    public String markAttendance(@RequestBody Attendance attendance) {
+    public Optional<Attendance> markAttendance(
+            @RequestBody Attendance attendance) {
+
         return attendenceService.markAttendance(attendance);
     }
 
-    // Get employee attendance records
+    // Dashboard Records
     @GetMapping("/dashboard/{empId}")
-    public List<Attendance> getAttendance(@PathVariable Long empId) {
+    public List<Attendance> getAttendance(
+            @PathVariable Long empId) {
+
         return attendenceService.getAttendance(empId);
     }
 
     // Check Out
     @PostMapping("/checkout/{empId}")
-    public String checkout(@PathVariable Long empId) {
+    public Optional<Attendance> checkout(
+            @PathVariable Long empId) {
+
         return attendenceService.checkout(empId);
     }
 }
